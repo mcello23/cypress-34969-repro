@@ -2,4 +2,3 @@ node_modules/
 logs/
 cypress/screenshots/
 cypress/videos/
-ISSUE-COMMENT*.md
