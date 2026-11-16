@@ -1,0 +1,14 @@
+{
+  "name": "cypress-34969-repro",
+  "private": true,
+  "description": "Repro for cypress-io/cypress#34969: native network path hangs during a cross-origin OIDC login inside cy.session on Windows",
+  "scripts": {
+    "serve": "node server.js",
+    "cy:native": "cypress run --browser chrome --config forceHttp1=false",
+    "cy:http1": "cypress run --browser chrome --config forceHttp1=true"
+  },
+  "devDependencies": {
+    "cypress": "16.3.0",
+    "selfsigned": "2.4.1"
+  }
+}
